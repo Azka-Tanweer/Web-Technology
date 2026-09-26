@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 420px;
+    background-color: #1c1717;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+}
+svg{
+    width: 50px;
+    margin-left: 0;
+}
+nav{
+    display: flex;
+    gap: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+nav a:hover{
+    color: #00D66C;
+}
+.btn1{
+    background-color: #00D66C;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.btn1:hover{
+    background-color: #fff;
+    color: #00D66C;
+}
+#hero{
+    background-image: url('./bgc-image.avif');
+    background-position: center;
+    width: 100%;
+    height: 90vh;
+    color: #fff;
+    text-align: center;
+    padding-top: 70px;
+}
+.hero-heading{
+    font-size: 40px;
+}
+.hero-para{
+    margin: 20px 0;
+}
+.btn2{
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1c1717;
+}
+.btn2:hover{
+    background-color: #1c1717;
+    color: #fff;
+}
+#services{
+    margin-top: 20px;
+    padding: 20px;
+}
+.container{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    text-align: center;
+    background-color: #413c3c;
+    border: 2px solid #1c1717;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 12px rgba(0,0,0,0.15);
+}
+#about{
+    padding: 20px;
+}
+.subtitle{
+    margin-top: 20px;
+    color: #2f2929;
+    font-weight: 500;
+    font-size: 25px;
+}
+.intro{
+    color: #413c3c;
+}
+.main-content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.col{
+    border: 2px solid #1c1717;
+    background-color: #413c3c;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+.col:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 12px rgba(0,0,0,0.15);
+}
+footer{
+    margin: 10px 0;
+}
+
+@media (max-width: 992px) {
+
+    .nav-section {
+        gap: 100px;
+    }
+
+    nav {
+        gap: 25px;
+    }
+
+    .hero-heading {
+        font-size: 35px;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-section {
+        height: auto;
+        min-height: 70px;
+        gap: 20px;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+
+    svg {
+        width: 40px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .btn1 {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    #hero {
+        height: auto;
+        min-height: 80vh;
+        padding: 80px 20px;
+        background-size: cover;
+    }
+
+    .hero-heading {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-para {
+        font-size: 15px;
+    }
+
+    .hero-para br {
+        display: none;
+    }
+
+    .btn2 {
+        font-size: 17px;
+        padding: 8px 18px;
+    }
+
+    #services {
+        padding: 20px 15px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #about {
+        padding: 20px 15px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .col {
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .nav-section {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    svg {
+        width: 35px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .btn1 {
+        padding: 8px 15px;
+    }
+
+    #hero {
+        min-height: 75vh;
+        padding: 60px 15px;
+    }
+
+    .hero-heading {
+        font-size: 27px;
+    }
+
+    .hero-para {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #services h1,
+    #about h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .main-content {
+        gap: 15px;
+    }
+
+    .col {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 13px;
+    }
+}
