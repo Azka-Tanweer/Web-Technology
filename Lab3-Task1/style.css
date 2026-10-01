@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    background-color: #e57676;
+    color: #fff;
+    padding: 20px;
+    margin: 180px auto;
+    border-radius: 5px;
+    border: 2px solid #df5555;
+    line-height: 1.5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+.main-heading{
+    margin-top: 20px;
+}
+.name-heading{
+    margin-top: 20px;
+}
+
+
+.skills-heading{
+    text-align: center;
+    margin-top: 20px;
+}
+
+li{
+    display: inline;
+    background-color: #fff;
+    color: #df5555;
+    border-radius: 50px;
+    border: 2px solid #df5555;
+    padding: 3px 10px;
+}
+
+li:hover{
+    background-color: #df5555;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.new-badge{
+    background-color: #fff;
+    border: none;
+    color: #df5555;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: 2px solid #df5555;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.new-badge:hover{
+    background-color: #df5555;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.contact-btn{
+    position: fixed;
+    right: 15px;
+    bottom: 5px;
+    background-color: #df5555;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.contact-btn:hover{
+    background-color: #fff;
+    border: 2px solid #df5555;
+    color: #df5555;
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+       margin-top: 300px;
+       text-align: center;
+       width: 300px;
+       height: 300px;
+    }
+    .name-heading{
+        margin-top: 30px;
+    }
+    .skills-heading{
+        margin-top: 20px;
+    }
+    .main-heading{
+        margin-top: 15px;
+    }
+}
