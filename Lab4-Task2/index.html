@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Form</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-6">
+
+        <h1>Registration Form</h1>
+
+        <form action="post"></form>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" class="form-control" id="fullname" name="fullname">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="emaile" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" class="form-control" id="city" name="city">
+            </div>
+
+                <div class="checkbox">
+                    <h3>Skills</h3>
+                    <label><input type="checkbox" value="html">HTML</label>
+                    <label><input type="checkbox" value="css">CSS</label>
+                    <label><input type="checkbox" value="bootstrap" disabled>Bootstrap</label>
+                </div>
+
+                <div style="margin-top:15px;">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+                </form>
+                </div>
+        <div class="col-sm-6">
+            <div class="text-center w-100 mb-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPrzNMo1fqkaw_-13ElVThmMUp9wQC0Vfcb-_wrbWlg&s=10" alt="logo" class="img-circle d-block mx-auto" width="150px">
+            </div>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#overview">Overview</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div id="overview">
+            <h2>Welcome to Our Institute</h2>
+            <p>We provide practical hands-on training in modern web development technologies. Our courses are designed for beginners to build a strong foundation in HTML, CSS, and Bootstrap.</p>
+            <button type="button" class="btn btn-primary">Read More</button>
+        </div>
+
+        <div id="courses">
+            <h2>Available Courses</h2>
+            <table class="table">
+                    <thead>
+                        <tr>
+                        <th>Course Name</th>
+                        <th>Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Physics</td>
+                        <td>5000</td>
+                        </tr>
+                        <tr>
+                        <td>OOP</td>
+                        <td>10000</td>
+                        </tr>
+                        <tr>
+                        <td>Web</td>
+                        <td>15000</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
